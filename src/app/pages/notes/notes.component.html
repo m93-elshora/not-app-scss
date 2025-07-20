@@ -1,0 +1,22 @@
+<div class="mb-5 p-4 bg-sky-100 text-sky-900 rounded-xl shadow-sm">
+  <h2 class="text-xl font-semibold mb-2">📋 What is GoodNotes?</h2>
+  <p class="text-sm leading-relaxed">
+    GoodNotes is a smart note-taking app that helps you stay organized.
+    You can create, edit, delete, and pin notes easily — all in one clean interface.
+    Use the 📌 icon to pin your most important notes and access them faster!
+  </p>
+  <a
+  routerLink="/pinned"
+  class="inline-block mt-2 text-sky-600 hover:underline text-sm font-medium"
+>
+  🔗 View your pinned notes only
+</a>
+  <button
+    type="button"
+    class="absolute top-3 right-3 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 inline-flex justify-center items-center"
+    data-modal-hide="default-modal"
+    (click)="closeModal()"
+  >
+    <i class="fa-solid fa-xmark"></i>
+  </button>
+</div>
